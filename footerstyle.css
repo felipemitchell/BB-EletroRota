@@ -1,0 +1,316 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Inter', system-ui, -apple-system, 'Roboto', sans-serif;
+            background: #f4f7fc;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Conteúdo simulado da página (para contextualizar o footer) */
+        .mock-page-content {
+            flex: 1;
+            background: #ffffff;
+            border-radius: 0 0 32px 32px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.02);
+            margin-bottom: 0;
+        }
+
+        .hero-preview {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 2rem 2rem 1.5rem;
+        }
+
+        .brand-badge {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 1rem;
+        }
+
+        .brand-badge i {
+            font-size: 2rem;
+            color: #FFB800;
+            background: #002B5C;
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        .hero-preview h2 {
+            color: #002B5C;
+            font-weight: 600;
+            font-size: 1.6rem;
+        }
+
+        .hero-preview p {
+            color: #2c3e4e;
+            margin-top: 8px;
+        }
+
+        hr {
+            margin: 1.8rem 2rem 0;
+            border: none;
+            height: 2px;
+            background: linear-gradient(90deg, #FFB800, #002B5C, #e0e7ed);
+        }
+
+        /* ================= FOOTER PRINCIPAL ================= */
+        .bb-footer {
+            background: #001a33;  /* tom profundo do BB */
+            color: #eef2f8;
+            border-top: 4px solid #FFB800;
+            margin-top: 0;
+        }
+
+        .footer-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 3rem 2rem 1.5rem;
+        }
+
+        /* grid de 4 colunas */
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem 2.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            padding-bottom: 2.5rem;
+            margin-bottom: 1.8rem;
+        }
+
+        /* estilos das colunas */
+        .footer-col h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+            position: relative;
+            display: inline-block;
+            letter-spacing: -0.2px;
+            color: #FFCC33;
+        }
+
+        .footer-col h3:after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: #FFB800;
+            border-radius: 4px;
+        }
+
+        .footer-logo-area {
+            margin-bottom: 1rem;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .footer-logo i {
+            font-size: 2rem;
+            color: #FFB800;
+            background: rgba(255, 184, 0, 0.12);
+            padding: 8px;
+            border-radius: 16px;
+        }
+
+        .footer-logo span {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: white;
+            letter-spacing: -0.5px;
+        }
+
+        .footer-logo span small {
+            font-size: 0.8rem;
+            font-weight: 400;
+            color: #FFCC66;
+        }
+
+        .description {
+            font-size: 0.85rem;
+            line-height: 1.45;
+            color: #cfddee;
+            margin: 0.75rem 0 1rem;
+        }
+
+        .trust-badge {
+            background: rgba(0, 40, 70, 0.7);
+            padding: 0.6rem 0.8rem;
+            border-radius: 14px;
+            font-size: 0.75rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 8px;
+            backdrop-filter: blur(2px);
+            border: 1px solid rgba(255, 184, 0, 0.3);
+        }
+
+        .trust-badge i {
+            color: #FFCC33;
+            font-size: 0.9rem;
+        }
+
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-col li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-col a {
+            color: #d4e2f5;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-col a i {
+            width: 1.25rem;
+            font-size: 0.8rem;
+            color: #FFCC66;
+        }
+
+        .footer-col a:hover {
+            color: #FFCC33;
+            transform: translateX(4px);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 0.8rem;
+            font-size: 0.85rem;
+        }
+
+        .contact-item i {
+            width: 24px;
+            color: #FFB800;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin: 1.2rem 0 1rem;
+        }
+
+        .social-links a {
+            background: rgba(255, 255, 255, 0.08);
+            width: 34px;
+            height: 34px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: 0.2s;
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        .social-links a:hover {
+            background: #FFB800;
+            color: #001a33;
+            transform: translateY(-3px);
+        }
+
+        .app-badge {
+            display: flex;
+            gap: 10px;
+            margin-top: 0.8rem;
+            flex-wrap: wrap;
+        }
+
+        .app-badge span {
+            background: rgba(255,255,240,0.1);
+            padding: 6px 12px;
+            border-radius: 28px;
+            font-size: 0.7rem;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            backdrop-filter: blur(2px);
+            transition: 0.2s;
+            cursor: default;
+            border: 1px solid rgba(255,200,100,0.3);
+        }
+
+        .app-badge i {
+            font-size: 0.9rem;
+        }
+
+        /* footer bottom row */
+        .footer-bottom {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            font-size: 0.7rem;
+            color: #b0c4df;
+        }
+
+        .footer-bottom .legal-links {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-bottom a {
+            color: #bcd0ea;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-bottom a:hover {
+            color: #FFCC33;
+            text-decoration: underline;
+        }
+
+        .copyright {
+            letter-spacing: 0.3px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 920px) {
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+            }
+            .footer-container {
+                padding: 2rem 1.5rem 1.2rem;
+            }
+        }
+
+        @media (max-width: 580px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .footer-bottom {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .hero-preview {
+                padding: 1.5rem;
+            }
+        }
